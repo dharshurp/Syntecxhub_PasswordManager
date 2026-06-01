@@ -91,4 +91,4 @@ Dharshini R P
 
 License
 
-This project is developed for educational and internship purposes.
+This project is developed for educational and internship evaluation purposes only. It is not intended for production use.
