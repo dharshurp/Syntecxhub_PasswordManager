@@ -1,60 +1,94 @@
-# Syntecxhub_PasswordManager
-# 🔐 Secure Password Manager
+🔐 Password Manager
 
-## 📌 Project Overview
-This project is a Secure Password Manager developed using Python and Fernet Encryption. It allows users to securely store, retrieve, and delete passwords while keeping sensitive information encrypted on local storage.
+Overview
 
-## 🎯 Objectives
-- Store passwords securely
-- Protect credentials using encryption
-- Learn cybersecurity concepts and secure coding practices
-- Practice Python file handling and data management
+This project is a local Password Manager developed in Python. It securely stores user credentials using encryption and allows users to manage passwords through a simple command-line interface.
 
-## ⚙️ Technologies Used
-- Python
-- Cryptography (Fernet)
+Features
+
+- Master Password Authentication
+- Add Password Entries
+- Retrieve Stored Passwords
+- Delete Password Entries
+- Search Password Entries
+- Encrypted Password Storage
+- Secure Local JSON Database
+- AES-based Symmetric Encryption using Fernet
+
+Technologies Used
+
+- Python 3
+- Cryptography Library (Fernet)
 - JSON
 - File Handling
 
-## ✨ Features
-- Add Password
-- View Password
-- Delete Password
-- Encrypted Password Storage
-- Simple User Interface (Command Line)
+Project Structure
 
-## 🔒 Security Features
-- Passwords are encrypted before storage
-- Encryption key stored separately
-- Secure local credential management
+password_manager.py
 
-## 🚀 How to Run
+passwords.json
 
-1. Install required library:
-   ```bash
-   pip install cryptography
-   ```
+secret.key
 
-2. Generate encryption key:
-   ```python
-   from cryptography.fernet import Fernet
+README.md
 
-   key = Fernet.generate_key()
-   with open("key.key", "wb") as f:
-       f.write(key)
-   ```
+Installation
 
-3. Run the Password Manager program.
+1. Clone the repository:
 
-## 📸 Output Screenshots
-Add your screenshots here:
-- Main Menu
-- Add Password
-- View Password
-- Delete Password
+git clone https://github.com/your-username/PasswordManager.git
 
-## 👩‍💻 Author
+2. Navigate to the project directory:
+
+cd PasswordManager
+
+3. Install required package:
+
+pip install cryptography
+
+Usage
+
+Run the program:
+
+python password_manager.py
+
+Enter the master password to access the password manager.
+
+Available options:
+
+1. Add Password
+2. Retrieve Password
+3. Delete Password
+4. Search Password
+5. Exit
+
+Security Features
+
+- Passwords are encrypted before being stored.
+- Encryption keys are managed separately.
+- Credentials are stored locally on disk.
+- Secure JSON-based storage format.
+- Master password authentication protects access.
+
+Example Storage Format
+
+{
+  "gmail": "gAAAAABxxxxxx...",
+  "facebook": "gAAAAABxxxxxx..."
+}
+
+Learning Outcomes
+
+- Cryptography and Encryption
+- Secure Password Storage
+- JSON Data Management
+- Python File Handling
+- Cybersecurity Fundamentals
+
+Author
+
 Dharshini R P
 
-## 🏢 Internship
-Project completed as part of the Syntecxhub Cybersecurity Internship.
+License
+
+This project is developed for educational and internship purposes.
